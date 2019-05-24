@@ -38,7 +38,7 @@ transformToMatrix <- function(df) {
       m[indv, date] <- if (length(val) > 0)
         val
       else
-        NA
+        ""
     }
   }
   m
