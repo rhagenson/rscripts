@@ -1,4 +1,6 @@
 # Built from: https://stackoverflow.com/questions/21511801/text-clustering-with-levenshtein-distances
+# Groups strings into numerical factors based on their textual similarity using maxDist
+# as the number of character differences allowed between elements in a given factor
 auto_group <- function(str_vec, maxDist) {
   require("dplyr")
   uniqElms <- length(unique(str_vec))
